@@ -12,8 +12,6 @@ This project demonstrates API automation testing using RestAssured, Maven, Java,
 ## API Base URL:
 https://673bdac096b8dcd5f3f7afdb.mockapi.io/api/v1/
 
-yaml
-Copiar código
 
 ## Test Cases
 
