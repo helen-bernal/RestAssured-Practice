@@ -1,7 +1,9 @@
 {
-  "name": "Ernesto",
+  "name": "Laura",
   "lastName": "Perez",
-  "gender": "Man",
   "country": "Colombia",
-  "city": "Bogota"
+  "city": "Bogota",
+  "email": "Laura@laura.com",
+  "phone": "634232",
+  "id": "5"
 }

@@ -6601,3 +6601,970 @@
 2024-11-29 22:02:38.486 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
 2024-11-29 22:02:38.487 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Update and delete a New Client
 2024-11-29 22:02:38.487 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************
+2024-11-29 23:21:54.482 INFO [api.stepDefinitions.Hooks:22] - *****************************************************************************************
+2024-11-29 23:21:54.487 INFO [api.stepDefinitions.Hooks:23] - 	Scenario: Get the list of active resources
+2024-11-29 23:21:54.488 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-11-29 23:21:57.593 INFO [api.stepDefinitions.ResourcesSteps:81] - [
+    {
+        "name": "Generic Rubber Shirt",
+        "trademark": "Windler, Medhurst and Fisher",
+        "stock": 710,
+        "price": 82946.32,
+        "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+        "tags": "name",
+        "active": false,
+        "id": "1"
+    },
+    {
+        "name": "Ergonomic Fresh Hat",
+        "trademark": "Ferry, Stoltenberg and Bernier",
+        "stock": 49252,
+        "price": 60543.03,
+        "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+        "tags": "updatedAt",
+        "active": true,
+        "id": "2"
+    },
+    {
+        "name": "Generic Metal Pants",
+        "trademark": "Goldner - Kilback",
+        "stock": 82783,
+        "price": 7798.4,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "group",
+        "active": true,
+        "id": "3"
+    },
+    {
+        "name": "Tasty Soft Mouse",
+        "trademark": "Harber, Schuppe and Borer",
+        "stock": 58205,
+        "price": 75475.99,
+        "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+        "tags": "updatedAt",
+        "active": true,
+        "id": "4"
+    },
+    {
+        "name": "Fantastic Plastic Towels",
+        "trademark": "Cummings Group",
+        "stock": 81091,
+        "price": 79275.72,
+        "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+        "tags": "comment",
+        "active": true,
+        "id": "5"
+    },
+    {
+        "name": "Elegant Metal Bacon",
+        "trademark": "Rempel, Fisher and Pagac",
+        "stock": 62169,
+        "price": 25160.41,
+        "description": "The Football Is Good For Training And Recreational Purposes",
+        "tags": "phone",
+        "active": true,
+        "id": "6"
+    },
+    {
+        "name": "Modern Wooden Fish",
+        "trademark": "Rodriguez - Stracke",
+        "stock": 57352,
+        "price": 37834.62,
+        "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+        "tags": "group",
+        "active": true,
+        "id": "7"
+    },
+    {
+        "name": "Fantastic Wooden Tuna",
+        "trademark": "Koelpin Group",
+        "stock": 52619,
+        "price": 65885.79,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "name",
+        "active": false,
+        "id": "8"
+    }
+]
+2024-11-29 23:21:57.965 INFO [api.stepDefinitions.ResourcesSteps:113] - There are at least 5 active resources in the system.
+2024-11-29 23:21:57.991 INFO [api.stepDefinitions.ResourcesSteps:124] - Found 6 active resources.
+2024-11-29 23:21:58.590 INFO [api.stepDefinitions.ResourcesSteps:133] - Updated resource Ergonomic Fresh Hat to inactive.
+2024-11-29 23:21:59.047 INFO [api.stepDefinitions.ResourcesSteps:133] - Updated resource Generic Metal Pants to inactive.
+2024-11-29 23:21:59.511 INFO [api.stepDefinitions.ResourcesSteps:133] - Updated resource Tasty Soft Mouse to inactive.
+2024-11-29 23:21:59.977 INFO [api.stepDefinitions.ResourcesSteps:133] - Updated resource Fantastic Plastic Towels to inactive.
+2024-11-29 23:22:00.452 INFO [api.stepDefinitions.ResourcesSteps:133] - Updated resource Elegant Metal Bacon to inactive.
+2024-11-29 23:22:00.905 INFO [api.stepDefinitions.ResourcesSteps:133] - Updated resource Modern Wooden Fish to inactive.
+2024-11-29 23:22:00.905 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
+2024-11-29 23:22:00.905 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Get the list of active resources
+2024-11-29 23:22:00.905 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************
+2024-11-29 23:22:17.406 INFO [api.stepDefinitions.Hooks:22] - *****************************************************************************************
+2024-11-29 23:22:17.411 INFO [api.stepDefinitions.Hooks:23] - 	Scenario: Update the last created resource
+2024-11-29 23:22:17.412 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-11-29 23:22:17.993 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
+2024-11-29 23:22:17.993 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Update the last created resource
+2024-11-29 23:22:17.994 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************
+2024-11-29 23:23:14.631 INFO [api.stepDefinitions.Hooks:22] - *****************************************************************************************
+2024-11-29 23:23:14.635 INFO [api.stepDefinitions.Hooks:23] - 	Scenario: Update the last created resource
+2024-11-29 23:23:14.636 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-11-29 23:23:15.170 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
+2024-11-29 23:23:15.171 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Update the last created resource
+2024-11-29 23:23:15.172 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************
+2024-11-29 23:24:49.958 INFO [api.stepDefinitions.Hooks:22] - *****************************************************************************************
+2024-11-29 23:24:49.964 INFO [api.stepDefinitions.Hooks:23] - 	Scenario: Update the last created resource
+2024-11-29 23:24:49.964 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-11-29 23:24:52.804 INFO [api.stepDefinitions.ResourcesSteps:27] - [
+    {
+        "name": "Generic Rubber Shirt",
+        "trademark": "Windler, Medhurst and Fisher",
+        "stock": 710,
+        "price": 82946.32,
+        "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+        "tags": "name",
+        "active": false,
+        "id": "1"
+    },
+    {
+        "name": "Ergonomic Fresh Hat",
+        "trademark": "Ferry, Stoltenberg and Bernier",
+        "stock": 49252,
+        "price": 60543.03,
+        "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+        "tags": "updatedAt",
+        "active": false,
+        "id": "2"
+    },
+    {
+        "name": "Generic Metal Pants",
+        "trademark": "Goldner - Kilback",
+        "stock": 82783,
+        "price": 7798.4,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "group",
+        "active": false,
+        "id": "3"
+    },
+    {
+        "name": "Tasty Soft Mouse",
+        "trademark": "Harber, Schuppe and Borer",
+        "stock": 58205,
+        "price": 75475.99,
+        "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+        "tags": "updatedAt",
+        "active": false,
+        "id": "4"
+    },
+    {
+        "name": "Fantastic Plastic Towels",
+        "trademark": "Cummings Group",
+        "stock": 81091,
+        "price": 79275.72,
+        "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+        "tags": "comment",
+        "active": false,
+        "id": "5"
+    },
+    {
+        "name": "Elegant Metal Bacon",
+        "trademark": "Rempel, Fisher and Pagac",
+        "stock": 62169,
+        "price": 25160.41,
+        "description": "The Football Is Good For Training And Recreational Purposes",
+        "tags": "phone",
+        "active": false,
+        "id": "6"
+    },
+    {
+        "name": "Modern Wooden Fish",
+        "trademark": "Rodriguez - Stracke",
+        "stock": 57352,
+        "price": 37834.62,
+        "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+        "tags": "group",
+        "active": false,
+        "id": "7"
+    },
+    {
+        "name": "Fantastic Wooden Tuna",
+        "trademark": "Koelpin Group",
+        "stock": 52619,
+        "price": 65885.79,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "name",
+        "active": false,
+        "id": "8"
+    },
+    {
+        "name": "Licensed Plastic Car",
+        "trademark": "Bruen - Runolfsson",
+        "stock": 78789,
+        "price": 39778.35,
+        "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+        "tags": "password",
+        "active": true,
+        "id": "9"
+    }
+]
+2024-11-29 23:24:53.180 WARN [api.stepDefinitions.ResourcesSteps:32] - There are less than 15 resources in the system. Adding missing resources.
+2024-11-29 23:24:54.143 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
+2024-11-29 23:24:54.144 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Update the last created resource
+2024-11-29 23:24:54.144 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************
+2024-11-29 23:26:31.171 INFO [api.stepDefinitions.Hooks:22] - *****************************************************************************************
+2024-11-29 23:26:31.173 INFO [api.stepDefinitions.Hooks:23] - 	Scenario: Update the last created resource
+2024-11-29 23:26:31.173 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-11-29 23:26:32.887 INFO [api.stepDefinitions.ResourcesSteps:27] - [
+    {
+        "name": "Generic Rubber Shirt",
+        "trademark": "Windler, Medhurst and Fisher",
+        "stock": 710,
+        "price": 82946.32,
+        "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+        "tags": "name",
+        "active": false,
+        "id": "1"
+    },
+    {
+        "name": "Ergonomic Fresh Hat",
+        "trademark": "Ferry, Stoltenberg and Bernier",
+        "stock": 49252,
+        "price": 60543.03,
+        "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+        "tags": "updatedAt",
+        "active": false,
+        "id": "2"
+    },
+    {
+        "name": "Generic Metal Pants",
+        "trademark": "Goldner - Kilback",
+        "stock": 82783,
+        "price": 7798.4,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "group",
+        "active": false,
+        "id": "3"
+    },
+    {
+        "name": "Tasty Soft Mouse",
+        "trademark": "Harber, Schuppe and Borer",
+        "stock": 58205,
+        "price": 75475.99,
+        "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+        "tags": "updatedAt",
+        "active": false,
+        "id": "4"
+    },
+    {
+        "name": "Fantastic Plastic Towels",
+        "trademark": "Cummings Group",
+        "stock": 81091,
+        "price": 79275.72,
+        "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+        "tags": "comment",
+        "active": false,
+        "id": "5"
+    },
+    {
+        "name": "Elegant Metal Bacon",
+        "trademark": "Rempel, Fisher and Pagac",
+        "stock": 62169,
+        "price": 25160.41,
+        "description": "The Football Is Good For Training And Recreational Purposes",
+        "tags": "phone",
+        "active": false,
+        "id": "6"
+    },
+    {
+        "name": "Modern Wooden Fish",
+        "trademark": "Rodriguez - Stracke",
+        "stock": 57352,
+        "price": 37834.62,
+        "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+        "tags": "group",
+        "active": false,
+        "id": "7"
+    },
+    {
+        "name": "Fantastic Wooden Tuna",
+        "trademark": "Koelpin Group",
+        "stock": 52619,
+        "price": 65885.79,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "name",
+        "active": false,
+        "id": "8"
+    },
+    {
+        "name": "Licensed Plastic Car",
+        "trademark": "Bruen - Runolfsson",
+        "stock": 78789,
+        "price": 39778.35,
+        "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+        "tags": "password",
+        "active": true,
+        "id": "9"
+    },
+    {
+        "name": "Minh",
+        "trademark": "Mayert",
+        "stock": 31,
+        "price": 72.88,
+        "description": "Molestias dolor ex perferendis.",
+        "tags": null,
+        "active": true,
+        "id": "10"
+    },
+    {
+        "name": "Generic Rubber Pizza",
+        "trademark": "Collins - Lindgren",
+        "stock": 44079,
+        "price": 78222.55,
+        "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+        "tags": "email",
+        "active": false,
+        "id": "11"
+    }
+]
+2024-11-29 23:26:33.126 WARN [api.stepDefinitions.ResourcesSteps:32] - There are less than 15 resources in the system. Adding missing resources.
+2024-11-29 23:26:33.833 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
+2024-11-29 23:26:33.834 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Update the last created resource
+2024-11-29 23:26:33.834 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************
+2024-11-29 23:28:41.620 INFO [api.stepDefinitions.Hooks:22] - *****************************************************************************************
+2024-11-29 23:28:41.626 INFO [api.stepDefinitions.Hooks:23] - 	Scenario: Update the last created resource
+2024-11-29 23:28:41.627 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-11-29 23:28:44.532 INFO [api.stepDefinitions.ResourcesSteps:29] - [
+    {
+        "name": "Generic Rubber Shirt",
+        "trademark": "Windler, Medhurst and Fisher",
+        "stock": 710,
+        "price": 82946.32,
+        "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+        "tags": "name",
+        "active": false,
+        "id": "1"
+    },
+    {
+        "name": "Ergonomic Fresh Hat",
+        "trademark": "Ferry, Stoltenberg and Bernier",
+        "stock": 49252,
+        "price": 60543.03,
+        "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+        "tags": "updatedAt",
+        "active": false,
+        "id": "2"
+    },
+    {
+        "name": "Generic Metal Pants",
+        "trademark": "Goldner - Kilback",
+        "stock": 82783,
+        "price": 7798.4,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "group",
+        "active": false,
+        "id": "3"
+    },
+    {
+        "name": "Tasty Soft Mouse",
+        "trademark": "Harber, Schuppe and Borer",
+        "stock": 58205,
+        "price": 75475.99,
+        "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+        "tags": "updatedAt",
+        "active": false,
+        "id": "4"
+    },
+    {
+        "name": "Fantastic Plastic Towels",
+        "trademark": "Cummings Group",
+        "stock": 81091,
+        "price": 79275.72,
+        "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+        "tags": "comment",
+        "active": false,
+        "id": "5"
+    },
+    {
+        "name": "Elegant Metal Bacon",
+        "trademark": "Rempel, Fisher and Pagac",
+        "stock": 62169,
+        "price": 25160.41,
+        "description": "The Football Is Good For Training And Recreational Purposes",
+        "tags": "phone",
+        "active": false,
+        "id": "6"
+    },
+    {
+        "name": "Modern Wooden Fish",
+        "trademark": "Rodriguez - Stracke",
+        "stock": 57352,
+        "price": 37834.62,
+        "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+        "tags": "group",
+        "active": false,
+        "id": "7"
+    },
+    {
+        "name": "Fantastic Wooden Tuna",
+        "trademark": "Koelpin Group",
+        "stock": 52619,
+        "price": 65885.79,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "name",
+        "active": false,
+        "id": "8"
+    },
+    {
+        "name": "Licensed Plastic Car",
+        "trademark": "Bruen - Runolfsson",
+        "stock": 78789,
+        "price": 39778.35,
+        "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+        "tags": "password",
+        "active": true,
+        "id": "9"
+    },
+    {
+        "name": "Minh",
+        "trademark": "Mayert",
+        "stock": 31,
+        "price": 72.88,
+        "description": "Molestias dolor ex perferendis.",
+        "tags": null,
+        "active": true,
+        "id": "10"
+    },
+    {
+        "name": "Generic Rubber Pizza",
+        "trademark": "Collins - Lindgren",
+        "stock": 44079,
+        "price": 78222.55,
+        "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+        "tags": "email",
+        "active": false,
+        "id": "11"
+    },
+    {
+        "name": "Nga",
+        "trademark": "Konopelski",
+        "stock": 63,
+        "price": 38.62,
+        "description": "Voluptate qui laborum temporibus quod.",
+        "tags": null,
+        "active": false,
+        "id": "12"
+    },
+    {
+        "name": "Ergonomic Metal Fish",
+        "trademark": "Wisozk Inc",
+        "stock": 32517,
+        "price": 12827.01,
+        "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+        "tags": "status",
+        "active": true,
+        "id": "13"
+    },
+    {
+        "name": "Intelligent Rubber Chicken",
+        "trademark": "Upton, Medhurst and Miller",
+        "stock": 79933,
+        "price": 39757.84,
+        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+        "tags": "name",
+        "active": false,
+        "id": "14"
+    },
+    {
+        "name": "Ergonomic Concrete Car",
+        "trademark": "Gottlieb - Kuhic",
+        "stock": 87184,
+        "price": 20591.91,
+        "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+        "tags": "password",
+        "active": true,
+        "id": "15"
+    },
+    {
+        "name": "Incredible Rubber Fish",
+        "trademark": "Hegmann Inc",
+        "stock": 16924,
+        "price": 36950.78,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "token",
+        "active": false,
+        "id": "16"
+    },
+    {
+        "name": "Sleek Steel Shirt",
+        "trademark": "Cronin, Hayes and Crist",
+        "stock": 14166,
+        "price": 8811.41,
+        "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+        "tags": "createdAt",
+        "active": false,
+        "id": "17"
+    },
+    {
+        "name": "Handmade Plastic Chair",
+        "trademark": "Wyman - Russel",
+        "stock": 24692,
+        "price": 31972.74,
+        "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+        "tags": "name",
+        "active": true,
+        "id": "18"
+    },
+    {
+        "name": "Tasty Rubber Computer",
+        "trademark": "Reichel Inc",
+        "stock": 57048,
+        "price": 74979.76,
+        "description": "The Football Is Good For Training And Recreational Purposes",
+        "tags": "title",
+        "active": true,
+        "id": "19"
+    },
+    {
+        "name": "Small Plastic Shirt",
+        "trademark": "Turcotte Inc",
+        "stock": 83430,
+        "price": 49766.51,
+        "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+        "tags": "id",
+        "active": false,
+        "id": "20"
+    },
+    {
+        "name": "Bespoke Cotton Table",
+        "trademark": "Wiegand, Nikolaus and Kerluke",
+        "stock": 87828,
+        "price": 36915.52,
+        "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+        "tags": "avatar",
+        "active": true,
+        "id": "21"
+    },
+    {
+        "name": "Practical Bronze Shirt",
+        "trademark": "Kunde, Cremin and Reichert",
+        "stock": 47087,
+        "price": 58009.61,
+        "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+        "tags": "password",
+        "active": true,
+        "id": "22"
+    },
+    {
+        "name": "Unbranded Fresh Towels",
+        "trademark": "Gleichner Inc",
+        "stock": 23975,
+        "price": 39786.24,
+        "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+        "tags": "email",
+        "active": true,
+        "id": "23"
+    },
+    {
+        "name": "Modern Concrete Table",
+        "trademark": "Carroll, Weimann and Reynolds",
+        "stock": 92693,
+        "price": 96228.34,
+        "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+        "tags": "token",
+        "active": true,
+        "id": "24"
+    },
+    {
+        "name": "Luxurious Soft Chips",
+        "trademark": "Kuphal Group",
+        "stock": 71016,
+        "price": 2990.56,
+        "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+        "tags": "name",
+        "active": true,
+        "id": "25"
+    },
+    {
+        "name": "Handmade Granite Chips",
+        "trademark": "Feil Inc",
+        "stock": 1461,
+        "price": 45006.36,
+        "description": "The Football Is Good For Training And Recreational Purposes",
+        "tags": "password",
+        "active": false,
+        "id": "26"
+    },
+    {
+        "name": "Refined Fresh Bacon",
+        "trademark": "Kulas - Bradtke",
+        "stock": 94534,
+        "price": 51215,
+        "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+        "tags": "comment",
+        "active": true,
+        "id": "27"
+    },
+    {
+        "name": "Gorgeous Cotton Pizza",
+        "trademark": "Kub and Sons",
+        "stock": 42159,
+        "price": 72154.57,
+        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+        "tags": "updatedAt",
+        "active": true,
+        "id": "28"
+    },
+    {
+        "name": "Fantastic Concrete Keyboard",
+        "trademark": "Kris, Thiel and Johnson",
+        "stock": 91610,
+        "price": 25103.79,
+        "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+        "tags": "status",
+        "active": false,
+        "id": "29"
+    },
+    {
+        "name": "Generic Bronze Car",
+        "trademark": "Altenwerth - Schmitt",
+        "stock": 86823,
+        "price": 18636.88,
+        "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+        "tags": "updatedAt",
+        "active": true,
+        "id": "30"
+    },
+    {
+        "name": "Licensed Fresh Bike",
+        "trademark": "Donnelly Group",
+        "stock": 87331,
+        "price": 89827.6,
+        "description": "The Football Is Good For Training And Recreational Purposes",
+        "tags": "updatedAt",
+        "active": true,
+        "id": "31"
+    }
+]
+2024-11-29 23:28:44.962 INFO [api.stepDefinitions.ResourcesSteps:59] - There are at least 15 resources in the system.
+2024-11-29 23:28:44.965 INFO [api.stepDefinitions.ResourcesSteps:71] - Found the latest resource: Licensed Fresh Bike
+2024-11-29 23:28:44.976 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
+2024-11-29 23:28:44.977 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Update the last created resource
+2024-11-29 23:28:44.977 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************
+2024-11-29 23:29:30.567 INFO [api.stepDefinitions.Hooks:22] - *****************************************************************************************
+2024-11-29 23:29:30.574 INFO [api.stepDefinitions.Hooks:23] - 	Scenario: Update the last created resource
+2024-11-29 23:29:30.574 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-11-29 23:29:33.718 INFO [api.stepDefinitions.ResourcesSteps:29] - [
+    {
+        "name": "Generic Rubber Shirt",
+        "trademark": "Windler, Medhurst and Fisher",
+        "stock": 710,
+        "price": 82946.32,
+        "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+        "tags": "name",
+        "active": false,
+        "id": "1"
+    },
+    {
+        "name": "Ergonomic Fresh Hat",
+        "trademark": "Ferry, Stoltenberg and Bernier",
+        "stock": 49252,
+        "price": 60543.03,
+        "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+        "tags": "updatedAt",
+        "active": false,
+        "id": "2"
+    },
+    {
+        "name": "Generic Metal Pants",
+        "trademark": "Goldner - Kilback",
+        "stock": 82783,
+        "price": 7798.4,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "group",
+        "active": false,
+        "id": "3"
+    },
+    {
+        "name": "Tasty Soft Mouse",
+        "trademark": "Harber, Schuppe and Borer",
+        "stock": 58205,
+        "price": 75475.99,
+        "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+        "tags": "updatedAt",
+        "active": false,
+        "id": "4"
+    },
+    {
+        "name": "Fantastic Plastic Towels",
+        "trademark": "Cummings Group",
+        "stock": 81091,
+        "price": 79275.72,
+        "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+        "tags": "comment",
+        "active": false,
+        "id": "5"
+    },
+    {
+        "name": "Elegant Metal Bacon",
+        "trademark": "Rempel, Fisher and Pagac",
+        "stock": 62169,
+        "price": 25160.41,
+        "description": "The Football Is Good For Training And Recreational Purposes",
+        "tags": "phone",
+        "active": false,
+        "id": "6"
+    },
+    {
+        "name": "Modern Wooden Fish",
+        "trademark": "Rodriguez - Stracke",
+        "stock": 57352,
+        "price": 37834.62,
+        "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+        "tags": "group",
+        "active": false,
+        "id": "7"
+    },
+    {
+        "name": "Fantastic Wooden Tuna",
+        "trademark": "Koelpin Group",
+        "stock": 52619,
+        "price": 65885.79,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "name",
+        "active": false,
+        "id": "8"
+    },
+    {
+        "name": "Licensed Plastic Car",
+        "trademark": "Bruen - Runolfsson",
+        "stock": 78789,
+        "price": 39778.35,
+        "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+        "tags": "password",
+        "active": true,
+        "id": "9"
+    },
+    {
+        "name": "Minh",
+        "trademark": "Mayert",
+        "stock": 31,
+        "price": 72.88,
+        "description": "Molestias dolor ex perferendis.",
+        "tags": null,
+        "active": true,
+        "id": "10"
+    },
+    {
+        "name": "Generic Rubber Pizza",
+        "trademark": "Collins - Lindgren",
+        "stock": 44079,
+        "price": 78222.55,
+        "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+        "tags": "email",
+        "active": false,
+        "id": "11"
+    },
+    {
+        "name": "Nga",
+        "trademark": "Konopelski",
+        "stock": 63,
+        "price": 38.62,
+        "description": "Voluptate qui laborum temporibus quod.",
+        "tags": null,
+        "active": false,
+        "id": "12"
+    },
+    {
+        "name": "Ergonomic Metal Fish",
+        "trademark": "Wisozk Inc",
+        "stock": 32517,
+        "price": 12827.01,
+        "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+        "tags": "status",
+        "active": true,
+        "id": "13"
+    },
+    {
+        "name": "Intelligent Rubber Chicken",
+        "trademark": "Upton, Medhurst and Miller",
+        "stock": 79933,
+        "price": 39757.84,
+        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+        "tags": "name",
+        "active": false,
+        "id": "14"
+    },
+    {
+        "name": "Ergonomic Concrete Car",
+        "trademark": "Gottlieb - Kuhic",
+        "stock": 87184,
+        "price": 20591.91,
+        "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+        "tags": "password",
+        "active": true,
+        "id": "15"
+    },
+    {
+        "name": "Incredible Rubber Fish",
+        "trademark": "Hegmann Inc",
+        "stock": 16924,
+        "price": 36950.78,
+        "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+        "tags": "token",
+        "active": false,
+        "id": "16"
+    },
+    {
+        "name": "Sleek Steel Shirt",
+        "trademark": "Cronin, Hayes and Crist",
+        "stock": 14166,
+        "price": 8811.41,
+        "description": "Carbonite web goalkeeper gloves are ergonomically designed to give easy fit",
+        "tags": "createdAt",
+        "active": false,
+        "id": "17"
+    },
+    {
+        "name": "Handmade Plastic Chair",
+        "trademark": "Wyman - Russel",
+        "stock": 24692,
+        "price": 31972.74,
+        "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+        "tags": "name",
+        "active": true,
+        "id": "18"
+    },
+    {
+        "name": "Tasty Rubber Computer",
+        "trademark": "Reichel Inc",
+        "stock": 57048,
+        "price": 74979.76,
+        "description": "The Football Is Good For Training And Recreational Purposes",
+        "tags": "title",
+        "active": true,
+        "id": "19"
+    },
+    {
+        "name": "Small Plastic Shirt",
+        "trademark": "Turcotte Inc",
+        "stock": 83430,
+        "price": 49766.51,
+        "description": "Ergonomic executive chair upholstered in bonded black leather and PVC padded seat and back for all-day comfort and support",
+        "tags": "id",
+        "active": false,
+        "id": "20"
+    },
+    {
+        "name": "Bespoke Cotton Table",
+        "trademark": "Wiegand, Nikolaus and Kerluke",
+        "stock": 87828,
+        "price": 36915.52,
+        "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+        "tags": "avatar",
+        "active": true,
+        "id": "21"
+    },
+    {
+        "name": "Practical Bronze Shirt",
+        "trademark": "Kunde, Cremin and Reichert",
+        "stock": 47087,
+        "price": 58009.61,
+        "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+        "tags": "password",
+        "active": true,
+        "id": "22"
+    },
+    {
+        "name": "Unbranded Fresh Towels",
+        "trademark": "Gleichner Inc",
+        "stock": 23975,
+        "price": 39786.24,
+        "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+        "tags": "email",
+        "active": true,
+        "id": "23"
+    },
+    {
+        "name": "Modern Concrete Table",
+        "trademark": "Carroll, Weimann and Reynolds",
+        "stock": 92693,
+        "price": 96228.34,
+        "description": "Boston's most advanced compression wear technology increases muscle oxygenation, stabilizes active muscles",
+        "tags": "token",
+        "active": true,
+        "id": "24"
+    },
+    {
+        "name": "Luxurious Soft Chips",
+        "trademark": "Kuphal Group",
+        "stock": 71016,
+        "price": 2990.56,
+        "description": "The automobile layout consists of a front-engine design, with transaxle-type transmissions mounted at the rear of the engine and four wheel drive",
+        "tags": "name",
+        "active": true,
+        "id": "25"
+    },
+    {
+        "name": "Handmade Granite Chips",
+        "trademark": "Feil Inc",
+        "stock": 1461,
+        "price": 45006.36,
+        "description": "The Football Is Good For Training And Recreational Purposes",
+        "tags": "password",
+        "active": false,
+        "id": "26"
+    },
+    {
+        "name": "Refined Fresh Bacon",
+        "trademark": "Kulas - Bradtke",
+        "stock": 94534,
+        "price": 51215,
+        "description": "The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design",
+        "tags": "comment",
+        "active": true,
+        "id": "27"
+    },
+    {
+        "name": "Gorgeous Cotton Pizza",
+        "trademark": "Kub and Sons",
+        "stock": 42159,
+        "price": 72154.57,
+        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+        "tags": "updatedAt",
+        "active": true,
+        "id": "28"
+    },
+    {
+        "name": "Fantastic Concrete Keyboard",
+        "trademark": "Kris, Thiel and Johnson",
+        "stock": 91610,
+        "price": 25103.79,
+        "description": "The slim & simple Maple Gaming Keyboard from Dev Byte comes with a sleek body and 7- Color RGB LED Back-lighting for smart functionality",
+        "tags": "status",
+        "active": false,
+        "id": "29"
+    },
+    {
+        "name": "Generic Bronze Car",
+        "trademark": "Altenwerth - Schmitt",
+        "stock": 86823,
+        "price": 18636.88,
+        "description": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+        "tags": "updatedAt",
+        "active": true,
+        "id": "30"
+    },
+    {
+        "name": "Licensed Fresh Bike",
+        "trademark": "Donnelly Group",
+        "stock": 87331,
+        "price": 89827.6,
+        "description": "The Football Is Good For Training And Recreational Purposes",
+        "tags": "updatedAt",
+        "active": true,
+        "id": "31"
+    }
+]
+2024-11-29 23:29:34.138 INFO [api.stepDefinitions.ResourcesSteps:59] - There are at least 15 resources in the system.
+2024-11-29 23:29:34.142 INFO [api.stepDefinitions.ResourcesSteps:71] - Found the latest resource: Licensed Fresh Bike
+2024-11-29 23:29:35.081 INFO [api.stepDefinitions.ResourcesSteps:86] - Updated resource: Hong
+2024-11-29 23:29:35.081 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
+2024-11-29 23:29:35.082 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Update the last created resource
+2024-11-29 23:29:35.082 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************

@@ -8,6 +8,8 @@ public final class Constants {
     public static final String BASE_URL                 = "https://673bdac096b8dcd5f3f7afdb.mockapi.io";
     public static final  String URL                      = "/api/v1/%s";
     public static final  String URL_WITH_PARAM           = "/api/v1/%s/%s";
+    public static final  String RESOURCES_PATH             = "resources";
+    public static final  String DEFAULT_RESOURCE_FILE_PATH = "src/main/resources/data/defaultResource.json";
 
     private Constants() {
     }

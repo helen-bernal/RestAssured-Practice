@@ -16,8 +16,7 @@ Feature: Client testing CRUD
   Scenario: Get the list of active resources
     Given there are at least five active resources
     When I find all the resources active
-    Then save her current phone number
-    And Update them as inactive
+    Then Update them as inactive
 
   @smoke @test3
   Scenario: Update and delete a New Client
@@ -27,8 +26,8 @@ Feature: Client testing CRUD
     And update any parameter of the new client
     And delete the new client
 
-  @smoke
+  @smoke @test4
   Scenario: Update the last created resource
-    Given there are at least 15 resources
+    Given there are at least fifteen resources
     When I find the latest resource
-    Then i update all the parameters of this resiyrce
+    Then i update all the parameters of this resource

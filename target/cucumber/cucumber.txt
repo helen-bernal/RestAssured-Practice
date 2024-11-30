@@ -1,8 +1,6 @@
 
-@active @smoke @test3
-Scenario: Update and delete a New Client     [90m# src/test/resources/features/client_testing_crud.feature:23[0m
-  [32mGiven [0m[32mi have access to the URL[0m             [90m# com.testing.api.stepDefinitions.ClientSteps.iHaveAccessToTheURL()[0m
-  [32mWhen [0m[32mI create a new client[0m                 [90m# com.testing.api.stepDefinitions.ClientSteps.iCreateANewClient()[0m
-  [32mThen [0m[32mi find the new client[0m                 [90m# com.testing.api.stepDefinitions.ClientSteps.iFindTheNewClient()[0m
-  [32mAnd [0m[32mupdate any parameter of the new client[0m [90m# com.testing.api.stepDefinitions.ClientSteps.updateAnyParameterOfTheNewClient()[0m
-  [32mAnd [0m[32mdelete the new client[0m                  [90m# com.testing.api.stepDefinitions.ClientSteps.deleteTheNewClient()[0m
+@active @smoke @test4
+Scenario: Update the last created resource          [90m# src/test/resources/features/client_testing_crud.feature:30[0m
+  [32mGiven [0m[32mthere are at least fifteen resources[0m        [90m# com.testing.api.stepDefinitions.ResourcesSteps.thereAreAtLeastFifteenResourcesInTheSystem()[0m
+  [32mWhen [0m[32mI find the latest resource[0m                   [90m# com.testing.api.stepDefinitions.ResourcesSteps.iFindTheLatestResource()[0m
+  [32mThen [0m[32mi update all the parameters of this resource[0m [90m# com.testing.api.stepDefinitions.ResourcesSteps.iUpdateAllTheParametersOfThisResource()[0m

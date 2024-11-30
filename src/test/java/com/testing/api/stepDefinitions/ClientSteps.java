@@ -12,8 +12,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import com.github.javafaker.Faker;
-
-
 import java.util.List;
 import java.util.Map;
 
@@ -28,54 +26,52 @@ public class ClientSteps {
     private String currentPhone;
 
 //Test Case 1
-    @Given("there are at least 10 registered clients in the system")
-    public void thereAreAtLeast10RegisteredClientsInTheSystem() {
-        response = clientRequest.getClients();
-        logger.info(response.jsonPath().prettify());
-        Assert.assertEquals(200, response.statusCode());
+@Given("there are at least 10 registered clients in the system")
+public void thereAreAtLeast10RegisteredClientsInTheSystem() {
+    response = clientRequest.getClients();
+    logger.info(response.jsonPath().prettify());
+    Assert.assertEquals(200, response.statusCode());
+
+    clientList = clientRequest.getClientsEntity(response);
+
+    if (clientList.size() < 10) {
+        logger.warn("There are less than 10 clients in the system. Adding missing clients.");
+
+        Response lauraResponse = clientRequest.createDefaultClient();
+        Assert.assertEquals(201, lauraResponse.statusCode());
+        logger.info("Created Laura's client from default JSON.");
 
         clientList = clientRequest.getClientsEntity(response);
 
-        if (clientList.size() < 10) {
-            logger.warn("There are less than 10 clients in the system. Adding missing clients.");
-
-            Client lauraClient = new Client("Laura", "Sporer", "France", "Spencercester", "Aron.Runolfsdottir@gmail.com", "983365", new Faker().idNumber().valid());
-            Response lauraResponse = clientRequest.createClient(lauraClient);
-            Assert.assertEquals(201, lauraResponse.statusCode());
-            logger.info("Created Laura's client: " + lauraClient.getName());
-
-            while (clientList.size() < 10) {
-                Client randomClient = new Client(
-                        new Faker().name().firstName(),
-                        new Faker().name().lastName(),
-                        new Faker().address().country(),
-                        new Faker().address().city(),
-                        new Faker().internet().emailAddress(),
-                        new Faker().phoneNumber().phoneNumber(),
-                        new Faker().idNumber().valid()
-                );
-                Response randomResponse = clientRequest.createClient(randomClient);
-                Assert.assertEquals(201, randomResponse.statusCode());
-                clientList.add(randomClient);
-                logger.info("Created random client: " + randomClient.getName());
-            }
-
-            logger.info("There are now at least 10 clients in the system.");
-        } else {
-            logger.info("There are at least 10 clients in the system.");
+        while (clientList.size() < 10) {
+            Client randomClient = new Client(
+                    new Faker().name().firstName(),
+                    new Faker().name().lastName(),
+                    new Faker().address().country(),
+                    new Faker().address().city(),
+                    new Faker().internet().emailAddress(),
+                    new Faker().phoneNumber().phoneNumber(),
+                    new Faker().idNumber().valid()
+            );
+            Response randomResponse = clientRequest.createClient(randomClient);
+            Assert.assertEquals(201, randomResponse.statusCode());
+            clientList.add(randomClient);
+            logger.info("Created random client: " + randomClient.getName());
         }
 
-        boolean lauraExists = clientList.stream().anyMatch(client -> "Laura".equals(client.getName()));
-
-        if (!lauraExists) {
-            logger.info("No client named 'Laura' found. Creating a new one.");
-            Client lauraClient = new Client("Laura", "Sporer", "France", "Spencercester", "Aron.Runolfsdottir@gmail.com", "983365", new Faker().idNumber().valid());
-            Response lauraResponse = clientRequest.createClient(lauraClient);
-            Assert.assertEquals(201, lauraResponse.statusCode());
-            logger.info("Created Laura's client: " + lauraClient.getName());
-        }
+        logger.info("There are now at least 10 clients in the system.");
+    } else {
+        logger.info("There are at least 10 clients in the system.");
     }
 
+    boolean lauraExists = clientList.stream().anyMatch(client -> "Laura".equals(client.getName()));
+    if (!lauraExists) {
+        logger.warn("Laura's client was not created. Creating her now.");
+        Response lauraResponse = clientRequest.createDefaultClient();
+        Assert.assertEquals(201, lauraResponse.statusCode());
+        logger.info("Created Laura's client from default JSON.");
+    }
+}
     @When("I find the client with name Laura")
     public void iFindTheClientWithNameLaura() {
         for (Client client : clientList) {
