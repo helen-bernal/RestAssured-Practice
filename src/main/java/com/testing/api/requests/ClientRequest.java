@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.testing.api.models.Client;
 import com.testing.api.utils.Constants;
 import com.testing.api.utils.JsonFileReader;
+import io.restassured.http.ContentType;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -11,8 +12,10 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
+import static io.restassured.RestAssured.given;
+
 public class ClientRequest extends BaseRequest {
-    
+
     private String endpoint;
     
     /**
@@ -93,9 +96,11 @@ public class ClientRequest extends BaseRequest {
         try {
             response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath(schemaPath));
             return true;
-        }
-        catch(AssertionError e) {
+        } catch (AssertionError e) {
             return false;
         }
+
     }
+
+
 }

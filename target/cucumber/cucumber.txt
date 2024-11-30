@@ -1,16 +1,9 @@
 
 @active @smoke @test1
-Scenario: Read details of an existing client            [90m# src/test/resources/features/client_testing_crud.feature:5[0m
-  [32mGiven [0m[32mthere are registered clients in the system[0m      [90m# com.testing.api.stepDefinitions.ClientSteps.thereAreRegisteredClientsInTheSystem()[0m
-  [32mWhen [0m[32mI retrieve the details of the client with ID [0m[32m[1m"1"[0m [90m# com.testing.api.stepDefinitions.ClientSteps.sendGETRequest(java.lang.String)[0m
-  [32mThen [0m[32mthe response should have a status code of [0m[32m[1m200[0m    [90m# com.testing.api.stepDefinitions.ClientSteps.theResponseShouldHaveAStatusCodeOf(int)[0m
-  [31mAnd [0m[31mthe response should have the following details:[0m   [90m# com.testing.api.stepDefinitions.ClientSteps.theResponseShouldHaveTheFollowingDetails(io.cucumber.datatable.DataTable)[0m
-    | Name    | LastName | Gender | Country  | City   | Id |
-    | Ernesto | Perez    | Man    | Colombia | Bogota | 1  |
-      [31morg.junit.ComparisonFailure: expected:<[Ernesto]> but was:<[Zelma]>
-	at org.junit.Assert.assertEquals(Assert.java:117)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.testing.api.stepDefinitions.ClientSteps.theResponseShouldHaveTheFollowingDetails(ClientSteps.java:87)
-	at ✽.the response should have the following details:(file:///C:/Users/helen.bernal/assuredApi/src/test/resources/features/client_testing_crud.feature:9)
-[0m
-  [36mAnd [0m[36mvalidates the response with client JSON schema[0m    [90m# com.testing.api.stepDefinitions.ClientSteps.userValidatesResponseWithClientJSONSchema()[0m
+Scenario: Change the phone number of the first Client named Laura [90m# src/test/resources/features/client_testing_crud.feature:7[0m
+  [32mGiven [0m[32mthere are at least 10 registered clients in the system[0m    [90m# com.testing.api.stepDefinitions.ClientSteps.thereAreAtLeast10RegisteredClientsInTheSystem()[0m
+  [32mWhen [0m[32mI find the client with name Laura[0m                          [90m# com.testing.api.stepDefinitions.ClientSteps.iFindTheClientWithNameLaura()[0m
+  [32mThen [0m[32msave her current phone number[0m                              [90m# com.testing.api.stepDefinitions.ClientSteps.saveHerCurrentPhoneNumber()[0m
+  [32mAnd [0m[32mupdate her phone number[0m                                     [90m# com.testing.api.stepDefinitions.ClientSteps.updateHerPhoneNumber()[0m
+  [32mAnd [0m[32mvalidate her phone number is different[0m                      [90m# com.testing.api.stepDefinitions.ClientSteps.validateHerPhoneNumberIsDifferent()[0m
+  [32mAnd [0m[32mdelete all clients[0m                                          [90m# com.testing.api.stepDefinitions.ClientSteps.deleteAllClients()[0m
