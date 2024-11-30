@@ -1,49 +1,94 @@
-RestAssured Practice
-For this practice, we will implement 4 test cases for an API in a development environment that
-complies with the following tools and technologies:
-● Java
-● Maven
-● RestAssured
-● POJO
-● Cucumber
-The test cases should be flexible and maintainable to adapt to future changes in endpointsor
-test data, and they should run automatically and independently without errors. The sourcecodeshould follow coding best practices, including Git Repository, README, and JavaDocdocumentation where appropriate. For this practice, we will use mockApi.io, and the base URL will be as follows:
-https://673bdac096b8dcd5f3f7afdb.mockapi.io/api/v1/clients
-Test Case 1: Change the phone number of the first Client named Laura
-Pre-Conditions:
-- Have at least 10 registered clients
-  Steps:
-- Find the first client named Laura
-- Save her current phone number
-- Update her phone number
-- Validate her new phone number is different
-  Post-Conditions:
-- Delete all the registered clients
-  Other possible verifications:
-  ● Verify that the response is equal to an HTTP status code of 200. ● Verify the structure of the response  body scheema
-  Test Case 2: Get the list of active resources
-  Pre-Conditions:
-- Have at least 5 active resources
-  Steps:
-- Find all resources active
-  Post-Conditions:
-- Update them as inactive
-  Other possible verifications:
-  ● Verify that the response is equal to an HTTP status code of 200. ● Verify the structure of the response body schema. Test Case 3: Update and delete a New Client
-  Pre-Conditions:
+# RestAssured API Practice Project
+
+This project demonstrates API automation testing using RestAssured, Maven, Java, POJO, and Cucumber. The tests are designed to be flexible, maintainable, and independent, adhering to best coding practices. The base API for testing is hosted on mockApi.io.
+
+## Tools & Technologies Used:
+- **Java**
+- **Maven**
+- **RestAssured**
+- **POJO (Plain Old Java Object)**
+- **Cucumber**
+
+## API Base URL:
+https://673bdac096b8dcd5f3f7afdb.mockapi.io/api/v1/
+
+yaml
+Copiar código
+
+## Test Cases
+
+### 1. **Change the phone number of the first client named Laura**
+#### Pre-Conditions:
+- At least 10 registered clients.
+
+#### Steps:
+1. Find the first client named "Laura".
+2. Save her current phone number.
+3. Update her phone number.
+4. Validate that her new phone number is different from the old one.
+
+#### Post-Conditions:
+- Delete all the registered clients.
+
+#### Verifications:
+- HTTP status code 200.
+- Validate the structure of the response body schema.
+
+
+### 2. **Get the list of active resources**
+#### Pre-Conditions:
+- At least 5 active resources.
+
+#### Steps:
+1. Retrieve all active resources.
+
+#### Post-Conditions:
+- Update all resources to inactive.
+
+#### Verifications:
+- HTTP status code 200.
+- Validate the structure of the response body schema.
+
+
+### 3. **Update and delete a new client**
+#### Pre-Conditions:
 - N/A
-  Steps:
-- Create a new client - Find the new client - Update any parameter of the new client - Delete the new client
-  Post-Conditions:
+
+#### Steps:
+1. Create a new client.
+2. Find the newly created client.
+3. Update any parameter of the client.
+4. Delete the new client.
+
+#### Post-Conditions:
 - N/A
-  Other possible verifications:
-  ● Verify that the response is equal to an HTTP status code of 200. ● Verify the structure of the response body schema. ● Verify the response body data after the update. Test Case 4: Update the last created resource
-  Pre-Conditions:
-- Have at least 15 resources
-  Steps:
-- Find the latest resource
-- Update all the parameters of this resource
-  Post-Conditions:
+
+#### Verifications:
+- HTTP status code 200.
+- Validate the structure of the response body schema.
+- Validate the response body data after the update.
+
+
+### 4. **Update the last created resource**
+#### Pre-Conditions:
+- At least 15 resources.
+
+#### Steps:
+1. Find the latest created resource.
+2. Update all parameters of the resource.
+
+#### Post-Conditions:
 - N/A
-  Other possible verifications:
-  ● Verify that the response is equal to an HTTP status code of 200. ● Verify the structure of the response body schema. ● Verify the response body data after the update
+
+#### Verifications:
+- HTTP status code 200.
+- Validate the structure of the response body schema.
+- Validate the response body data after the update.
+
+
+## Setup Instructions
+
+### Prerequisites:
+- Java 11 or higher
+- Maven
+- IDE like IntelliJ IDEA 
