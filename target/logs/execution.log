@@ -6409,3 +6409,195 @@
 2024-11-29 21:25:30.604 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
 2024-11-29 21:25:30.605 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Change the phone number of the first Client named Laura
 2024-11-29 21:25:30.605 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************
+2024-11-29 21:46:37.991 INFO [api.stepDefinitions.Hooks:22] - *****************************************************************************************
+2024-11-29 21:46:37.995 INFO [api.stepDefinitions.Hooks:23] - 	Scenario: Change the phone number of the first Client named Laura
+2024-11-29 21:46:37.995 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-11-29 21:46:40.616 INFO [api.stepDefinitions.ClientSteps:35] - [
+    {
+        "name": "Cora",
+        "lastName": "Ebert",
+        "country": "Guadeloupe",
+        "city": "North Helmer",
+        "email": "Margarett.Koch52@hotmail.com",
+        "phone": "(384) 999-4239 x8960",
+        "id": "1"
+    },
+    {
+        "name": "Shanelle",
+        "lastName": "Renner",
+        "country": "Georgia",
+        "city": "Emardport",
+        "email": "Brenna83@yahoo.com",
+        "phone": "609.980.1928 x25905",
+        "id": "2"
+    }
+]
+2024-11-29 21:46:40.903 WARN [api.stepDefinitions.ClientSteps:43] - There are less than 10 clients in the system. Creating new clients...
+2024-11-29 21:46:41.857 INFO [api.stepDefinitions.ClientSteps:63] - Created client: Santos
+2024-11-29 21:46:42.404 INFO [api.stepDefinitions.ClientSteps:63] - Created client: Season
+2024-11-29 21:46:42.877 INFO [api.stepDefinitions.ClientSteps:63] - Created client: Ping
+2024-11-29 21:46:43.411 INFO [api.stepDefinitions.ClientSteps:63] - Created client: Jess
+2024-11-29 21:46:43.884 INFO [api.stepDefinitions.ClientSteps:63] - Created client: Paula
+2024-11-29 21:46:44.330 INFO [api.stepDefinitions.ClientSteps:63] - Created client: Roxy
+2024-11-29 21:46:44.779 INFO [api.stepDefinitions.ClientSteps:63] - Created client: Lizzette
+2024-11-29 21:46:45.242 INFO [api.stepDefinitions.ClientSteps:63] - Created client: Adella
+2024-11-29 21:46:45.688 INFO [api.stepDefinitions.ClientSteps:73] - There are at least 10 clients in the system.
+2024-11-29 21:46:45.692 WARN [api.stepDefinitions.ClientSteps:85] - No client found with the name Laura.
+2024-11-29 21:46:45.698 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
+2024-11-29 21:46:45.698 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Change the phone number of the first Client named Laura
+2024-11-29 21:46:45.698 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************
+2024-11-29 21:51:02.654 INFO [api.stepDefinitions.Hooks:22] - *****************************************************************************************
+2024-11-29 21:51:02.658 INFO [api.stepDefinitions.Hooks:23] - 	Scenario: Change the phone number of the first Client named Laura
+2024-11-29 21:51:02.659 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-11-29 21:51:05.412 INFO [api.stepDefinitions.ClientSteps:35] - [
+    {
+        "name": "Zelma",
+        "lastName": "Flatley",
+        "country": "Argentina",
+        "city": "Fort Mozelle",
+        "email": "Leta_Marvin0@yahoo.com",
+        "phone": "1-413-910-8165 x822",
+        "id": "1"
+    },
+    {
+        "name": "Dominic",
+        "lastName": "Hickle",
+        "country": "Albania",
+        "city": "Seamusville",
+        "email": "Rubye.Bashirian@hotmail.com",
+        "phone": "609.650.8414 x2745",
+        "id": "2"
+    },
+    {
+        "name": "Hertha",
+        "lastName": "Sipes",
+        "country": "Angola",
+        "city": "West Todfurt",
+        "email": "Marianne.Gerlach81@gmail.com",
+        "phone": "(590) 778-5120 x992",
+        "id": "3"
+    },
+    {
+        "name": "Emery",
+        "lastName": "Medhurst",
+        "country": "Panama",
+        "city": "South Alannacester",
+        "email": "Caden.Mante@yahoo.com",
+        "phone": "1-901-964-3265 x5332",
+        "id": "4"
+    },
+    {
+        "name": "Laura",
+        "lastName": "Sporer",
+        "country": "France",
+        "city": "Spencercester",
+        "email": "Aron.Runolfsdottir@gmail.com",
+        "phone": "745-435-4573 x06070",
+        "id": "5"
+    },
+    {
+        "name": "Ines",
+        "lastName": "Davis",
+        "country": "Mexico",
+        "city": "Downey",
+        "email": "Nico_Mosciski50@hotmail.com",
+        "phone": "1-665-470-3495 x4770",
+        "id": "6"
+    },
+    {
+        "name": "Keon",
+        "lastName": "Hirthe",
+        "country": "Bermuda",
+        "city": "East Sage",
+        "email": "Summer.Kiehn@gmail.com",
+        "phone": "1-245-924-8592",
+        "id": "7"
+    },
+    {
+        "name": "Muriel",
+        "lastName": "Fadel",
+        "country": "Reunion",
+        "city": "New Shannonton",
+        "email": "Erna_Kerluke14@hotmail.com",
+        "phone": "1-225-203-7465",
+        "id": "8"
+    },
+    {
+        "name": "Laura",
+        "lastName": "Ledner",
+        "country": "Cayman Islands",
+        "city": "Gulfport",
+        "email": "Kenyatta.Bergnaum75@gmail.com",
+        "phone": "775.957.7164",
+        "id": "9"
+    },
+    {
+        "name": "Paris",
+        "lastName": "Parker",
+        "country": "Micronesia",
+        "city": "Stephanybury",
+        "email": "Joseph22@gmail.com",
+        "phone": "796.861.1981 x6329",
+        "id": "10"
+    },
+    {
+        "name": "Cassandre",
+        "lastName": "Schuster",
+        "country": "France",
+        "city": "Lake Savanna",
+        "email": "Adolphus39@hotmail.com",
+        "phone": "920.528.3190 x204",
+        "id": "11"
+    }
+]
+2024-11-29 21:51:05.776 INFO [api.stepDefinitions.ClientSteps:70] - There are at least 10 clients in the system.
+2024-11-29 21:51:05.794 INFO [api.stepDefinitions.ClientSteps:97] - Found client with name Laura: Client(name=Laura, lastName=Sporer, gender=null, country=France, city=Spencercester, id=5, email=Aron.Runolfsdottir@gmail.com, phone=745-435-4573 x06070)
+2024-11-29 21:51:05.799 INFO [api.stepDefinitions.ClientSteps:104] - Laura's current phone number is: 745-435-4573 x06070
+2024-11-29 21:51:05.800 INFO [api.stepDefinitions.ClientSteps:117] - Updated phone number: 87
+2024-11-29 21:51:06.880 INFO [api.stepDefinitions.ClientSteps:121] - Phone number in response: 87
+2024-11-29 21:51:06.881 INFO [api.stepDefinitions.ClientSteps:123] - Laura's phone number updated successfully.
+2024-11-29 21:51:06.882 INFO [api.stepDefinitions.ClientSteps:134] - The phone number has been successfully updated. Old: 745-435-4573 x06070, New: 87
+2024-11-29 21:51:07.837 INFO [api.stepDefinitions.ClientSteps:153] - Successfully deleted client with id: 1
+2024-11-29 21:51:08.283 INFO [api.stepDefinitions.ClientSteps:153] - Successfully deleted client with id: 2
+2024-11-29 21:51:08.740 INFO [api.stepDefinitions.ClientSteps:153] - Successfully deleted client with id: 3
+2024-11-29 21:51:09.187 INFO [api.stepDefinitions.ClientSteps:153] - Successfully deleted client with id: 4
+2024-11-29 21:51:09.659 INFO [api.stepDefinitions.ClientSteps:153] - Successfully deleted client with id: 5
+2024-11-29 21:51:10.102 INFO [api.stepDefinitions.ClientSteps:153] - Successfully deleted client with id: 6
+2024-11-29 21:51:10.547 INFO [api.stepDefinitions.ClientSteps:153] - Successfully deleted client with id: 7
+2024-11-29 21:51:10.988 INFO [api.stepDefinitions.ClientSteps:153] - Successfully deleted client with id: 8
+2024-11-29 21:51:11.424 INFO [api.stepDefinitions.ClientSteps:153] - Successfully deleted client with id: 9
+2024-11-29 21:51:11.861 INFO [api.stepDefinitions.ClientSteps:153] - Successfully deleted client with id: 10
+2024-11-29 21:51:12.306 INFO [api.stepDefinitions.ClientSteps:153] - Successfully deleted client with id: 11
+2024-11-29 21:51:12.308 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
+2024-11-29 21:51:12.308 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Change the phone number of the first Client named Laura
+2024-11-29 21:51:12.308 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************
+2024-11-29 22:01:11.271 INFO [api.stepDefinitions.Hooks:22] - *****************************************************************************************
+2024-11-29 22:01:11.281 INFO [api.stepDefinitions.Hooks:23] - 	Scenario: Change the phone number of the first Client named Laura
+2024-11-29 22:01:11.283 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-11-29 22:01:14.687 INFO [api.stepDefinitions.ClientSteps:34] - [
+    {
+        "name": "Brendon",
+        "lastName": "Huels",
+        "country": "Paraguay",
+        "city": "Havenmouth",
+        "email": "Cynthia.MacGyver@hotmail.com",
+        "phone": "443.830.2251 x7195",
+        "id": "1"
+    }
+]
+2024-11-29 22:01:15.017 WARN [api.stepDefinitions.ClientSteps:40] - There are less than 10 clients in the system. Adding missing clients.
+2024-11-29 22:01:15.740 INFO [api.stepDefinitions.ClientSteps:45] - Created Laura's client: Laura
+2024-11-29 22:01:16.622 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
+2024-11-29 22:01:16.623 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Change the phone number of the first Client named Laura
+2024-11-29 22:01:16.623 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************
+2024-11-29 22:02:32.520 INFO [api.stepDefinitions.Hooks:22] - *****************************************************************************************
+2024-11-29 22:02:32.523 INFO [api.stepDefinitions.Hooks:23] - 	Scenario: Update and delete a New Client
+2024-11-29 22:02:32.524 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-11-29 22:02:35.078 INFO [api.stepDefinitions.ClientSteps:158] - Access to the URL is successful. Response status: 200
+2024-11-29 22:02:36.509 INFO [api.stepDefinitions.ClientSteps:174] - Created new client: Todd
+2024-11-29 22:02:37.470 INFO [api.stepDefinitions.ClientSteps:181] - New client found: Todd
+2024-11-29 22:02:37.982 INFO [api.stepDefinitions.ClientSteps:190] - Updated client phone number: 987654321
+2024-11-29 22:02:38.485 INFO [api.stepDefinitions.ClientSteps:198] - Deleted client with ID: 4
+2024-11-29 22:02:38.486 INFO [api.stepDefinitions.Hooks:32] - *****************************************************************************************
+2024-11-29 22:02:38.487 INFO [api.stepDefinitions.Hooks:33] - 	Scenario finished: Update and delete a New Client
+2024-11-29 22:02:38.487 INFO [api.stepDefinitions.Hooks:34] - *****************************************************************************************

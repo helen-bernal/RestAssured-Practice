@@ -1,9 +1,8 @@
 
-@active @smoke @test1
-Scenario: Change the phone number of the first Client named Laura [90m# src/test/resources/features/client_testing_crud.feature:7[0m
-  [32mGiven [0m[32mthere are at least 10 registered clients in the system[0m    [90m# com.testing.api.stepDefinitions.ClientSteps.thereAreAtLeast10RegisteredClientsInTheSystem()[0m
-  [32mWhen [0m[32mI find the client with name Laura[0m                          [90m# com.testing.api.stepDefinitions.ClientSteps.iFindTheClientWithNameLaura()[0m
-  [32mThen [0m[32msave her current phone number[0m                              [90m# com.testing.api.stepDefinitions.ClientSteps.saveHerCurrentPhoneNumber()[0m
-  [32mAnd [0m[32mupdate her phone number[0m                                     [90m# com.testing.api.stepDefinitions.ClientSteps.updateHerPhoneNumber()[0m
-  [32mAnd [0m[32mvalidate her phone number is different[0m                      [90m# com.testing.api.stepDefinitions.ClientSteps.validateHerPhoneNumberIsDifferent()[0m
-  [32mAnd [0m[32mdelete all clients[0m                                          [90m# com.testing.api.stepDefinitions.ClientSteps.deleteAllClients()[0m
+@active @smoke @test3
+Scenario: Update and delete a New Client     [90m# src/test/resources/features/client_testing_crud.feature:23[0m
+  [32mGiven [0m[32mi have access to the URL[0m             [90m# com.testing.api.stepDefinitions.ClientSteps.iHaveAccessToTheURL()[0m
+  [32mWhen [0m[32mI create a new client[0m                 [90m# com.testing.api.stepDefinitions.ClientSteps.iCreateANewClient()[0m
+  [32mThen [0m[32mi find the new client[0m                 [90m# com.testing.api.stepDefinitions.ClientSteps.iFindTheNewClient()[0m
+  [32mAnd [0m[32mupdate any parameter of the new client[0m [90m# com.testing.api.stepDefinitions.ClientSteps.updateAnyParameterOfTheNewClient()[0m
+  [32mAnd [0m[32mdelete the new client[0m                  [90m# com.testing.api.stepDefinitions.ClientSteps.deleteTheNewClient()[0m

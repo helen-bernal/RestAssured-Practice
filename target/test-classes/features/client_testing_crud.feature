@@ -1,8 +1,7 @@
-#@active
+@active
 Feature: Client testing CRUD
 #My cases
 
-  @active
   @smoke @test1
   Scenario: Change the phone number of the first Client named Laura
     Given there are at least 10 registered clients in the system
@@ -13,16 +12,16 @@ Feature: Client testing CRUD
     And delete all clients
 
 
-  @smoke
+  @smoke @test2
   Scenario: Get the list of active resources
     Given there are at least five active resources
     When I find all the resources active
     Then save her current phone number
     And Update them as inactive
 
-  @smoke
+  @smoke @test3
   Scenario: Update and delete a New Client
-    Given i have access to the data
+    Given i have access to the URL
     When I create a new client
     Then i find the new client
     And update any parameter of the new client

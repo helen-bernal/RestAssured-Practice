@@ -9,6 +9,8 @@ import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.jetbrains.annotations.NotNull;
+import com.github.javafaker.Faker;
+
 
 import java.util.List;
 
@@ -102,5 +104,25 @@ public class ClientRequest extends BaseRequest {
 
     }
 
+    public class ClientDataGenerator {
+
+        public static void main(String[] args) {
+            Faker faker = new Faker();
+
+            String name = faker.name().firstName();
+            String lastName = faker.name().lastName();
+            String country = faker.address().country();
+            String city = faker.address().city();
+            String email = faker.internet().emailAddress();
+            String phone = faker.phoneNumber().phoneNumber();
+
+            System.out.println("Name: " + name);
+            System.out.println("Last Name: " + lastName);
+            System.out.println("Country: " + country);
+            System.out.println("City: " + city);
+            System.out.println("Email: " + email);
+            System.out.println("Phone: " + phone);
+        }
+    }
 
 }

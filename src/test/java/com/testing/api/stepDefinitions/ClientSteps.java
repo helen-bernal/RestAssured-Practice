@@ -11,6 +11,8 @@ import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
+import com.github.javafaker.Faker;
+
 
 import java.util.List;
 import java.util.Map;
@@ -25,20 +27,54 @@ public class ClientSteps {
     Client lauraClient = null;
     private String currentPhone;
 
+//Test Case 1
+    @Given("there are at least 10 registered clients in the system")
+    public void thereAreAtLeast10RegisteredClientsInTheSystem() {
+        response = clientRequest.getClients();
+        logger.info(response.jsonPath().prettify());
+        Assert.assertEquals(200, response.statusCode());
 
-   @Given("there are at least 10 registered clients in the system")
-   public void thereAreAtLeast10RegisteredClientsInTheSystem() {
-       response = clientRequest.getClients();
-       logger.info(response.jsonPath().prettify());
-       Assert.assertEquals(200, response.statusCode());
-       clientList = clientRequest.getClientsEntity(response);
-       if (clientList.size() < 10) {
-           logger.warn("There are less than 10 clients in the system.");
-           Assert.fail("There are less than 10 clients in the system.");
-       } else {
-           logger.info("There are at least 10 clients in the system.");
-       }
-   }
+        clientList = clientRequest.getClientsEntity(response);
+
+        if (clientList.size() < 10) {
+            logger.warn("There are less than 10 clients in the system. Adding missing clients.");
+
+            Client lauraClient = new Client("Laura", "Sporer", "France", "Spencercester", "Aron.Runolfsdottir@gmail.com", "983365", new Faker().idNumber().valid());
+            Response lauraResponse = clientRequest.createClient(lauraClient);
+            Assert.assertEquals(201, lauraResponse.statusCode());
+            logger.info("Created Laura's client: " + lauraClient.getName());
+
+            while (clientList.size() < 10) {
+                Client randomClient = new Client(
+                        new Faker().name().firstName(),
+                        new Faker().name().lastName(),
+                        new Faker().address().country(),
+                        new Faker().address().city(),
+                        new Faker().internet().emailAddress(),
+                        new Faker().phoneNumber().phoneNumber(),
+                        new Faker().idNumber().valid()
+                );
+                Response randomResponse = clientRequest.createClient(randomClient);
+                Assert.assertEquals(201, randomResponse.statusCode());
+                clientList.add(randomClient);
+                logger.info("Created random client: " + randomClient.getName());
+            }
+
+            logger.info("There are now at least 10 clients in the system.");
+        } else {
+            logger.info("There are at least 10 clients in the system.");
+        }
+
+        boolean lauraExists = clientList.stream().anyMatch(client -> "Laura".equals(client.getName()));
+
+        if (!lauraExists) {
+            logger.info("No client named 'Laura' found. Creating a new one.");
+            Client lauraClient = new Client("Laura", "Sporer", "France", "Spencercester", "Aron.Runolfsdottir@gmail.com", "983365", new Faker().idNumber().valid());
+            Response lauraResponse = clientRequest.createClient(lauraClient);
+            Assert.assertEquals(201, lauraResponse.statusCode());
+            logger.info("Created Laura's client: " + lauraClient.getName());
+        }
+    }
 
     @When("I find the client with name Laura")
     public void iFindTheClientWithNameLaura() {
@@ -113,30 +149,53 @@ public class ClientSteps {
         }
     }
 
-/*
+    //TestCase 3
+    @Given("i have access to the URL")
+    public void iHaveAccessToTheURL() {
+        response = clientRequest.getClients();
+        Assert.assertEquals(200, response.statusCode());
+        logger.info("Access to the URL is successful. Response status: " + response.statusCode());
+    }
 
+    @When("I create a new client")
+    public void iCreateANewClient() {
+        Client newClient = new Client(
+                new Faker().name().firstName(),
+                new Faker().name().lastName(),
+                new Faker().address().country(),
+                new Faker().address().city(),
+                new Faker().internet().emailAddress(),
+                new Faker().phoneNumber().phoneNumber(),
+                new Faker().idNumber().valid()
+        );
+        response = clientRequest.createClient(newClient);
+        Assert.assertEquals(201, response.statusCode());
+        logger.info("Created new client: " + newClient.getName());
+    }
 
-      @smoke @test1
-      Scenario: Get the list of active resources
-        Given there are at least five active resources
-        When I find all the resources active
-        Then save her current phone number
-        And Update them as inactive
+    @Then("i find the new client")
+    public void iFindTheNewClient() {
+        String clientName = response.jsonPath().getString("name");
+        Assert.assertNotNull(clientName);
+        logger.info("New client found: " + clientName);
+    }
+    @And("update any parameter of the new client")
+    public void updateAnyParameterOfTheNewClient() {
+        Client updatedClient = new Client();
+        updatedClient.setPhone("987654321");
+        String clientId = response.jsonPath().getString("id");
+        response = clientRequest.updateClient(updatedClient, clientId);
+        Assert.assertEquals(200, response.statusCode());
+        logger.info("Updated client phone number: " + updatedClient.getPhone());
+    }
 
-      @smoke @test1
-      Scenario: Update and delete a New Client
-        Given i have access to the data
-        When I create a new client
-        Then i find the new client
-        And update any parameter of the new client
-        And delete the new client
-
-      @smoke @test1
-      Scenario: Update the last created resource
-        Given there are at least 15 resources
-        When I find the latest resource
-        Then i update all the parameters of this resiyrce
-            */
+    @And("delete the new client")
+    public void deleteTheNewClient() {
+        String clientId = response.jsonPath().getString("id");
+        response = clientRequest.deleteClient(clientId);
+        Assert.assertEquals(200, response.statusCode());
+        logger.info("Deleted client with ID: " + clientId);
+    }
 
 
 
